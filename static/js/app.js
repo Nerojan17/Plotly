@@ -1,6 +1,6 @@
 
 
-d3.json("samples.json").then(function (data){
+d3.json("data/samples.json").then(function (data){
 
     data.metadata.forEach(d => {
         
@@ -15,7 +15,7 @@ d3.json("samples.json").then(function (data){
 
  function optionChanged(id) {
 
-    d3.json("samples.json").then(function (data){
+    d3.json("data/samples.json").then(function (data){
 
         demInfo = data.metadata.find(d => d.id == id);
         
